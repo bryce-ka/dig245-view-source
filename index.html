@@ -6,36 +6,86 @@
     /* <link rel="stylesheet" href = "assets/css/styles.css"> */
 
     h1 {
-      color: #BE9FE1;
+      color: #A084CA;
       text-align: center;
       font-family: sans-serif;
       font-style: normal;
       font-variant: small-caps;
-      background-color: #A084CA;
-      margin-left: 350px;
-      margin-right:350px;
-
+      font-size: 50px;
     }
 
     body {
       background-color: #F1F1F6;
       margin: 10em;
-      font-family: sans-serif;
-    }
-    card{
-      /* padding: 5em 4em 5em 4em; */
-
+      padding-right: 400px font-family: sans-serif;
     }
 
-    div-1 {
+    .card {
+      background-color: #E1CCEC;
+      background-blend-mode: color-burn;
+    }
+
+    .row {
+      column-count: 2;
+      column-gap: 10%;
       color: black;
       background-position: center;
       background-color: #E1CCEC;
       background-blend-mode: color-burn;
     }
-    ol-back{
-      padding: 2em 4em 5em 4em;
-      background-color: blue;
+
+    .list {
+      margin-left: 10%;
+      margin-right: 10%;
+      margin-top: auto;
+      margin-bottom: auto;
+      padding-bottom: auto;
+      padding-top;
+      auto;
+      padding-left: auto;
+      padding-bottom: auto;
+    }
+
+    .list2 {
+      margin-left: 10%;
+      margin-right: 10%;
+      margin-top: auto;
+      margin-bottom: auto;
+      padding-bottom: auto;
+      padding-top;
+      auto;
+      padding-left: auto;
+      padding-bottom: auto;
+    }
+
+    .col {
+      float: left;
+      width: 40%;
+      padding: 10px;
+    }
+
+    .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+    }
+
+    .itemol {
+      padding-top: 2%;
+    }
+
+    .itemul {
+      padding-top: .8%;
+    }
+
+    .image {
+      padding-bottom: 5%;
+    }
+
+    .image2 {
+      padding-bottom: 5%;
+      padding-left: 10%
     }
 
     h3 {
@@ -50,60 +100,81 @@
 <body>
 
   <!-- visible content goes here -->
-  <h1>DIG 245 View Source</h1>
-  <h3>How to view source</h3>
-  <ol>
-    <li>Boot up your computer and launch Google Chrome</li>
-    <li>Navigate the desired website, if you dont have the web address memorized thats ok, just use google!</li>
-    <li>Once you're on the site right click the page and click on the inspect option towards the bottom of the list</li>
-    <li>Voila, now youre in the chrome developer tools.<br> Here you can:</li>
-    <ul>
-      <li>View/edit the html of the page youre currently on</li>
-      <li>View/edit the css of the page youre currently on</li>
-      <li>View/edit the javascript of the page youre currently on</li>
-      <li>Remove the paywall blocking your article ;)</li>
-      <li>Delete all of the text on the website and view a blank white screen</li>
-      <li>you can even view <span style="color:green; font-family:'Comic Sans MS Italic'; font-weight: 'bold';">secret messages</span> from the developer of the page!</li>
-    </ul>
-    <li>I like to call this digging in the weeds of the website</li>
-  </ol>
-  <div id = div1>
-    <div class = card-header>
-    <h3><u>To view this image yourself:</u></h3>
+  <h1>DIG 245<br>View Source</h1>
+
+
+  <div class=card>
+    <hr>
+    <h3><u>How do I view the source code?</u></h3>
+    <div class=row>
+      <ol class=list>
+        <li class=itemol>Boot up your computer and launch Google Chrome</li>
+        <li class=itemol>Navigate the desired website, if you dont have the web address memorized thats ok, just use Google!</li>
+        <li class=itemol>Once you're on the site right click the page and click on the inspect option towards the bottom of the list</li>
+        <li class=itemol>Voila, now youre in the Chrome developer tools.<br></li>
+      </ol>
+      <br>
+      <br>
+      <br>
+      <br>
+
+      <ul class=list>
+        <span class=center> Here you can: </span>
+        <li class=itemul>View/edit the html of the page you're currently on.</li>
+        <li class=itemul>View/edit the css of the page you're currently on.</li>
+        <li class=itemul>View/edit the javascript of the page you're currently on.</li>
+        <li class=itemul>Remove the paywall blocking your article ;)</li>
+        <li class=itemul>Delete all of the text on the website and view a blank white screen</li>
+        <li class=itemul>you can even view <span style="color:green; font-family:'Comic Sans MS Italic'; font-weight: 'bold';">secret messages</span> from the developer of the page!</li>
+        <li class=itemul style="padding-bottom:6%;"><b>I like to call this digging into the weeds of the website</b></li>
+      </ul>
+    </div>
+
+    <img src="assets/img/view-source.png" width=400px class="center image">
     <hr>
   </div>
-    <div class= "ol-back">
-      <div id=doge-img style = width: "50%";><a href="https://dogechain.info/"><img src="assets/img/doge.png" target="_blank" height="300"></a></div>
 
-      <ol style = width: "50%";>
+  <div class=card>
+    <hr>
+    <h3><u>To view this image yourself:</u></h3>
+
+    <div class=row>
+      <div class=image2><a href="https://dogechain.info/"><img src="assets/img/doge.png" target="_blank" height="300"></a></div>
+
+      <ol class=list2>
         <li>Navigate to <a href="https://dogechain.info/">dogechain.info</a> by clicking the hyperlink or the image above</li>
-        <li>Once you're on the site right click the page and click on the inspect option towards the bottom of the list</li>
+        <li>Once you're on the site, right click the page and click on the inspect option towards the bottom of the list</li>
         <li>Voila, now youre in the chrome developer tools.<br>
         <li>Toggle the dropdown by clicking the <span style="color:RoyalBlue;">&lthead&gt...&lthead&gt</span> section of the html document.</li>
         <li>Admire the Doge in all of its greatness, and dont be afraid it can't bite you!</li>
       </ol>
     </div>
+    <hr>
+  </div>
+  <div class=card>
     <div>
-      <div>
-        <hr>
-        <h3 style = image-orientation: > My favorite Animal </h3>
-        <img src="https://images.unsplash.com/photo-1598439210625-5067c578f3f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80" height="300" alt="secret link = https://www.rataalada.com/">
-      </div>
-      <script>
-        // alert("alert")
-        console.log("looks better in the html than the log")
-        console.log("________________                                                                          ______________                  ");
-        console.log("____  _/___  __/       _____  ________ ____  _______________        _____________ ______ _______  /___(_)_______ _______ _");
-        console.log(" __  /  __  /_         __  / / /_  __ \_  / / /__  ___/_  _ \       __  ___/_  _ \_  __ `/_  __  / __  / __  __ \__  __ `/");
-        console.log("__/ /   _  __/         _  /_/ / / /_/ // /_/ / _  /    /  __/       _  /    /  __// /_/ / / /_/ /  _  /  _  / / /_  /_/ / ");
-        console.log("/___/   /_/            _\__, /  \____/ \__,_/  /_/     \___/        /_/     \___/ \__,_/  \__,_/   /_/   /_/ /_/ _\__, /  ");
-        console.log("                       /____/                                                                                    /____/   ");
-        console.log(" _____ ______  _____                _____ _____                _____                      ______        _____        ");
-        console.log(" __  /____  /_ ___(_)________       ___(_)__  /_________       __  /_______ ______        ___  /______ ___  /______  ");
-        console.log(" _  __/__  __ \__  / __  ___/       __  / _  __/__  ___/       _  __/_  __ \_  __ \       __  / _  __ `/_  __/_  _ \ ");
-        console.log(" / /_  _  / / /_  /  _(__  )        _  /  / /_  _(__  )        / /_  / /_/ // /_/ /       _  /  / /_/ / / /_  /  __/ ");
-        console.log(" \__/  /_/ /_/ /_/   /____/         /_/   \__/  /____/         \__/  \____/ \____/        /_/   \__,_/  \__/  \___/  ");
-      </script>
+      <hr>
+      <h3><u>My favorite Animal</u></h3>
+      <img src="https://images.unsplash.com/photo-1598439210625-5067c578f3f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80" height="300" alt="secret link = https://www.rataalada.com/" class=center
+        style="padding-bottom: 10%;">
+    </div>
+    <hr>
+  </div>
+  <script>
+    // alert("alert")
+    console.log("looks better in the html than the log")
+    console.log("________________                                                                          ______________                  ");
+    console.log("____  _/___  __/       _____  ________ ____  _______________        _____________ ______ _______  /___(_)_______ _______ _");
+    console.log(" __  /  __  /_         __  / / /_  __ \_  / / /__  ___/_  _ \       __  ___/_  _ \_  __ `/_  __  / __  / __  __ \__  __ `/");
+    console.log("__/ /   _  __/         _  /_/ / / /_/ // /_/ / _  /    /  __/       _  /    /  __// /_/ / / /_/ /  _  /  _  / / /_  /_/ / ");
+    console.log("/___/   /_/            _\__, /  \____/ \__,_/  /_/     \___/        /_/     \___/ \__,_/  \__,_/   /_/   /_/ /_/ _\__, /  ");
+    console.log("                       /____/                                                                                    /____/   ");
+    console.log(" _____ ______  _____                _____ _____                _____                      ______        _____        ");
+    console.log(" __  /____  /_ ___(_)________       ___(_)__  /_________       __  /_______ ______        ___  /______ ___  /______  ");
+    console.log(" _  __/__  __ \__  / __  ___/       __  / _  __/__  ___/       _  __/_  __ \_  __ \       __  / _  __ `/_  __/_  _ \ ");
+    console.log(" / /_  _  / / /_  /  _(__  )        _  /  / /_  _(__  )        / /_  / /_/ // /_/ /       _  /  / /_/ / / /_  /  __/ ");
+    console.log(" \__/  /_/ /_/ /_/   /____/         /_/   \__/  /____/         \__/  \____/ \____/        /_/   \__,_/  \__/  \___/  ");
+  </script>
 </body>
 
 </html>
